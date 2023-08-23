@@ -23,7 +23,7 @@ public class SignUp extends HttpServlet {
 		Modal modal = new Modal();
 
 		if (modal.userValidate()) {
-			/*---------------Exist User email ID*/
+			/*Exist User email ID*/
 			req.setAttribute("existUser", "This Email has been taken");
 			req.getRequestDispatcher("signUp.jsp").forward(req, resp);
 		} else {
